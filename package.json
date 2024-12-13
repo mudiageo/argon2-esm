@@ -1,8 +1,14 @@
 {
   "name": "argon2-esm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An Argon2 library for Node",
-  "keywords": ["argon2", "crypto", "encryption", "hashing", "password"],
+  "keywords": [
+    "argon2",
+    "crypto",
+    "encryption",
+    "hashing",
+    "password"
+  ],
   "homepage": "https://github.com/mudiageo/argon2-esm#readme",
   "bugs": {
     "url": "https://github.com/mudiageo/argon2-esm/issues"
@@ -18,7 +24,6 @@
     "import": "argon2.js",
     "require": "argon2.cjs"
   },
-
   "main": "argon2.js",
   "module": "argon2.js",
   "types": "argon2.d.cts",
@@ -43,7 +48,9 @@
     "prebuilds/**/*.node"
   ],
   "binary": {
-    "napi_versions": [8]
+    "napi_versions": [
+      8
+    ]
   },
   "scripts": {
     "build": "prebuildify --napi --strip --tag-armv --tag-libc",
