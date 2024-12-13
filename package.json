@@ -21,8 +21,8 @@
   "author": "Mudiaga Arharhire  <mudiageo+argon2@gmail.com>",
   "type": "module",
   "exports": {
-    "import": "argon2.js",
-    "require": "argon2.cjs"
+    "import": "./argon2.js",
+    "require": "./argon2.cjs"
   },
   "main": "argon2.js",
   "module": "argon2.js",
