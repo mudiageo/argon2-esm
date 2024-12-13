@@ -1,20 +1,26 @@
 {
-  "name": "argon2",
-  "version": "0.41.1",
+  "name": "argon2-esm",
+  "version": "0.0.1",
   "description": "An Argon2 library for Node",
   "keywords": ["argon2", "crypto", "encryption", "hashing", "password"],
-  "homepage": "https://github.com/ranisalt/node-argon2#readme",
+  "homepage": "https://github.com/mudiageo/argon2-esm#readme",
   "bugs": {
-    "url": "https://github.com/ranisalt/node-argon2/issues"
+    "url": "https://github.com/mudiageo/argon2-esm/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ranisalt/node-argon2.git"
+    "url": "https://github.com/mud8ageo/argon2-esm.git"
   },
   "license": "MIT",
-  "author": "Ranieri Althoff <ranisalt+argon2@gmail.com>",
-  "type": "commonjs",
-  "main": "argon2.cjs",
+  "author": "Mudiaga Arharhire  <mudiageo+argon2@gmail.com>",
+  "type": "module",
+  "exports": {
+    "import": "argon2.js",
+    "require": "argon2.cjs"
+  },
+
+  "main": "argon2.js",
+  "module": "argon2.js",
   "types": "argon2.d.cts",
   "files": [
     "argon2.cpp",
