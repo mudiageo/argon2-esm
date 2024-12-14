@@ -25,9 +25,9 @@ jobs:
     strategy:
       matrix:
         include:
-          - os: ubuntu-20.04
+          - os: ubuntu-22.04
             arch: linux-x64-glibc
-          - os: macos-12
+          - os: macos-14
             arch: darwin-x64
           - os: macos-m1
             arch: darwin-arm64
@@ -63,7 +63,7 @@ jobs:
 
   build-linux-arm64-glibc:
     name: Build for linux-arm64-glibc
-    runs-on: buildjet-2vcpu-ubuntu-2204-arm
+    runs-on: ubuntu-latest
 
     container:
       image: node:20-bullseye
@@ -119,7 +119,7 @@ jobs:
 
   build-linux-arm64-musl:
     name: Build for linux-arm64-musl
-    runs-on: ubuntu-latest
+    runs-on: buildjet-2vcpu-ubuntu-2204-arm
 
     steps:
       - name: Checkout
