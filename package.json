@@ -1,6 +1,6 @@
 {
   "name": "argon2-esm",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "An Argon2 library for Node",
   "keywords": [
     "argon2",
