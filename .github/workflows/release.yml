@@ -117,36 +117,7 @@ jobs:
           name: prebuild-linux-x64-musl
           path: prebuilds/**/*.node
 
-  build-linux-arm64-musl:
-    name: Build for linux-arm64-musl
-    runs-on: buildjet-2vcpu-ubuntu-2204-arm
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: true
-
-      - name: Prebuild
-        uses: uraimo/run-on-arch-action@v2
-        with:
-          arch: aarch64
-          distro: alpine_latest
-          dockerRunArgs: --volume "${PWD}:/repo" --workdir /repo
-          install: |
-            apk add --update make g++ python3
-            apk add --no-cache --repository https://dl-cdn.alpinelinux.org/alpine/v3.19/main/ nodejs~=20 npm
-          run: |
-            npm ci
-            npm run build
-
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: prebuild-linux-arm64-musl
-          path: prebuilds/**/*.node
-
-  build-freebsd-x64:
+ build-freebsd-x64:
     name: Build for freebsd-x64
     runs-on: ubuntu-latest
 
