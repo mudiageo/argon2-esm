@@ -29,8 +29,6 @@ jobs:
             arch: linux-x64-glibc
           - os: macos-14
             arch: darwin-x64
-          - os: macos-m3
-            arch: darwin-arm64
           - os: windows-2019
             arch: win32-x64
 
