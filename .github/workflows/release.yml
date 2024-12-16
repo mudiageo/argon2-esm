@@ -181,6 +181,7 @@ jobs:
 
       - name: Publish to NPM
         run: |
+          echo "$(jq '.publishConfig.registry = "https://registry.npmjs.org"' package.json)" > package.json
           npm version --allow-same-version --no-git-tag-version $VERSION
           npm publish --provenance --tag $TAG
         if: ${{ !env.ACT }}
