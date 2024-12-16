@@ -117,7 +117,7 @@ jobs:
           name: prebuild-linux-x64-musl
           path: prebuilds/**/*.node
 
- build-freebsd-x64:
+  build-freebsd-x64:
     name: Build for freebsd-x64
     runs-on: ubuntu-latest
 
