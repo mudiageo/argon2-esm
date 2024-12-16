@@ -183,7 +183,7 @@ jobs:
         run: |
           echo "$(jq '.publishConfig.registry = "https://registry.npmjs.org"' package.json)" > package.json
           npm version --allow-same-version --no-git-tag-version $VERSION
-          npm publish --provenance --tag $TAG
+          npm publish --tag $TAG
         if: ${{ !env.ACT }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
