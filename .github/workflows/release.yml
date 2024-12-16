@@ -28,8 +28,8 @@ jobs:
           - os: ubuntu-22.04
             arch: linux-x64-glibc
           - os: macos-14
-            arch: darwin-x64
           - os: macos-m1
+            arch: darwin-x64
             arch: darwin-arm64
           - os: windows-2019
             arch: win32-x64
@@ -155,7 +155,6 @@ jobs:
       - build
       - build-freebsd-x64
       - build-linux-arm64-glibc
-      - build-linux-arm64-musl
       - build-linux-x64-musl
 
     steps:
