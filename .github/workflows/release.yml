@@ -28,8 +28,8 @@ jobs:
           - os: ubuntu-22.04
             arch: linux-x64-glibc
           - os: macos-14
-          - os: macos-m1
             arch: darwin-x64
+          - os: macos-m1
             arch: darwin-arm64
           - os: windows-2019
             arch: win32-x64
